@@ -13,13 +13,13 @@ BitTorrent là một giao thức chia sẻ file ngang hàng (P2P) được thi�
 ### Tính năng chính đã hiện thực
 
 * **Tải file Torrent:** Ứng dụng cho phép tải các file được chia sẻ thông qua giao thức BitTorrent[cite: 1].
-* **Tạo file Torrent:** Ứng dụng có khả năng tạo ra các file .torrent từ một file nguồn cho trước để chia sẻ với peer khác thông qua internet[cite: 1].
-* **Kết nối với Tracker:** Ứng dụng có thể giao tiếp với tracker để lấy danh sách các peer có chứa các phần của file cần tải[cite: 1].
+* **Tạo file Torrent:** Ứng dụng có khả năng tạo ra các file .torrent từ một file nguồn cho trước để chia sẻ với peer khác thông qua internet[cite: 1]
+* **Kết nối với Tracker:** Ứng dụng có thể giao tiếp với tracker để lấy danh sách các peer có chứa các phần của file cần tải[cite: 1]
 * **Quản lý Peer:** Ứng dụng quản lý kết nối với nhiều peer để tải dữ liệu đồng thời[cite: 1].
 * **Chia nhỏ và ghép mảnh:** File được chia thành các mảnh nhỏ hơn để tải xuống song song từ nhiều peer và sau đó ghép lại thành file hoàn chỉnh[cite: 1].
 * **Xác thực dữ liệu:** Ứng dụng xác thực tính toàn vẹn của các mảnh dữ liệu tải xuống bằng cách sử dụng hash SHA1[cite: 1].
 * **Giao diện đồ họa (GUI):** Ứng dụng có giao diện đồ họa cho phép người dùng tương tác một cách trực quan[cite: 1].
-* **Hiển thị thông tin tải xuống:** Ứng dụng hiển thị tên file, kích thước, tiến trình, tốc độ tải và số lượng peers[cite: 1].
+* **Hiển thị thông tin tải xuống:** Ứng dụng hiển thị tên file, kích thước, tiến trình, tốc độ tải và số lượng peers[cite: 1]
 
 ### Công nghệ đã sử dụng
 
@@ -72,4 +72,5 @@ BitTorrent là một giao thức chia sẻ file ngang hàng (P2P) được thi�
 Tracker là một máy chủ đóng vai trò trung gian trong giao thức BitTorrent. Khi tải một file .torrent, ứng dụng của client sẽ liên hệ với tracker được chỉ định trong file đó để lấy danh sách các peer hiện đang có các phần của file bạn muốn tải[cite: 1].
 
 Phần trên chỉ là phía Client nên chưa thể thật sự hoạt động, tác giả sẽ thực hiện Tracker trong tương lai (không) gần =))
+Thông tin liên lạc: phanhuuphuoc101@gmail.com 
 
