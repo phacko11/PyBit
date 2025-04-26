@@ -12,31 +12,31 @@ BitTorrent là một giao thức chia sẻ file ngang hàng (P2P) được thi�
 
 ### Tính năng chính đã hiện thực
 
-* **Tải file Torrent:** Ứng dụng cho phép tải các file được chia sẻ thông qua giao thức BitTorrent[cite: 1].
-* **Tạo file Torrent:** Ứng dụng có khả năng tạo ra các file .torrent từ một file nguồn cho trước để chia sẻ với peer khác thông qua internet[cite: 1]
-* **Kết nối với Tracker:** Ứng dụng có thể giao tiếp với tracker để lấy danh sách các peer có chứa các phần của file cần tải[cite: 1]
-* **Quản lý Peer:** Ứng dụng quản lý kết nối với nhiều peer để tải dữ liệu đồng thời[cite: 1].
-* **Chia nhỏ và ghép mảnh:** File được chia thành các mảnh nhỏ hơn để tải xuống song song từ nhiều peer và sau đó ghép lại thành file hoàn chỉnh[cite: 1].
-* **Xác thực dữ liệu:** Ứng dụng xác thực tính toàn vẹn của các mảnh dữ liệu tải xuống bằng cách sử dụng hash SHA1[cite: 1].
-* **Giao diện đồ họa (GUI):** Ứng dụng có giao diện đồ họa cho phép người dùng tương tác một cách trực quan[cite: 1].
-* **Hiển thị thông tin tải xuống:** Ứng dụng hiển thị tên file, kích thước, tiến trình, tốc độ tải và số lượng peers[cite: 1]
+* **Tải file Torrent:** Ứng dụng cho phép tải các file được chia sẻ thông qua giao thức BitTorrent.
+* **Tạo file Torrent:** Ứng dụng có khả năng tạo ra các file .torrent từ một file nguồn cho trước để chia sẻ với peer khác thông qua internet
+* **Kết nối với Tracker:** Ứng dụng có thể giao tiếp với tracker để lấy danh sách các peer có chứa các phần của file cần tải
+* **Quản lý Peer:** Ứng dụng quản lý kết nối với nhiều peer để tải dữ liệu đồng thời
+* **Chia nhỏ và ghép mảnh:** File được chia thành các mảnh nhỏ hơn để tải xuống song song từ nhiều peer và sau đó ghép lại thành file hoàn chỉnh
+* **Xác thực dữ liệu:** Ứng dụng xác thực tính toàn vẹn của các mảnh dữ liệu tải xuống bằng cách sử dụng hash SHA1
+* **Giao diện đồ họa (GUI):** Ứng dụng có giao diện đồ họa cho phép người dùng tương tác một cách trực quan
+* **Hiển thị thông tin tải xuống:** Ứng dụng hiển thị tên file, kích thước, tiến trình, tốc độ tải và số lượng peers
 
 ### Công nghệ đã sử dụng
 
-* **Python:** Ngôn ngữ lập trình chính để xây dựng ứng dụng[cite: 1].
-* **Tkinter:** Thư viện để xây dựng giao diện đồ họa người dùng (GUI)[cite: 1].
-* **bencodepy:** Thư viện để mã hóa và giải mã dữ liệu Bencode (định dạng dữ liệu được sử dụng trong file .torrent và giao tiếp với tracker)[cite: 1, 2].
-* **requests:** Thư viện để thực hiện các yêu cầu HTTP (ví dụ: giao tiếp với tracker)[cite: 1, 2].
-* **hashlib:** Thư viện để tính toán hash SHA1 (sử dụng để xác thực dữ liệu)[cite: 1].
-* **socket:** Thư viện để lập trình socket (giao tiếp mạng)[cite: 1].
-* **threading:** Thư viện để quản lý các luồng (ví dụ: tải xuống đồng thời)[cite: 1].
-
+* **Python:** Ngôn ngữ lập trình chính để xây dựng ứng dụng
+* **Tkinter:** Thư viện để xây dựng giao diện đồ họa người dùng (GUI)
+* **bencodepy:** Thư viện để mã hóa và giải mã dữ liệu Bencode (định dạng dữ liệu được sử dụng trong file .torrent và giao tiếp với tracker)
+* **requests:** Thư viện để thực hiện các yêu cầu HTTP (ví dụ: giao tiếp với tracker)
+* **hashlib:** Thư viện để tính toán hash SHA1 (sử dụng để xác thực dữ liệu)
+* **socket:** Thư viện để lập trình socket (giao tiếp mạng)
+* **threading:** Thư viện để quản lý các luồng (ví dụ: tải xuống đồng thời)
+* 
 ## 2. Hướng dẫn cài đặt và chạy app
 
 ### Yêu cầu
 
 * **Python 3.6 trở lên**
-* **Các thư viện được liệt kê trong `requirements.txt`** [cite: 2]
+* **Các thư viện được liệt kê trong `requirements.txt`**
 
 ### Cài đặt
 
@@ -44,7 +44,7 @@ BitTorrent là một giao thức chia sẻ file ngang hàng (P2P) được thi�
 2.  **Cài đặt các thư viện:**
     * Mở terminal hoặc command prompt.
     * Di chuyển đến thư mục chứa file `requirements.txt`.
-    * Chạy lệnh: `pip install -r requirements.txt` [cite: 2]
+    * Chạy lệnh: `pip install -r requirements.txt`
 
 ### Chạy ứng dụng
 
@@ -69,7 +69,7 @@ BitTorrent là một giao thức chia sẻ file ngang hàng (P2P) được thi�
 
 ## 4. Một chút thông tin về Tracker để hoàn thiện ứng dụng
 
-Tracker là một máy chủ đóng vai trò trung gian trong giao thức BitTorrent. Khi tải một file .torrent, ứng dụng của client sẽ liên hệ với tracker được chỉ định trong file đó để lấy danh sách các peer hiện đang có các phần của file bạn muốn tải[cite: 1].
+Tracker là một máy chủ đóng vai trò trung gian trong giao thức BitTorrent. Khi tải một file .torrent, ứng dụng của client sẽ liên hệ với tracker được chỉ định trong file đó để lấy danh sách các peer hiện đang có các phần của file bạn muốn tải
 
 Phần trên chỉ là phía Client nên chưa thể thật sự hoạt động, tác giả sẽ thực hiện Tracker trong tương lai (không) gần =))
 Thông tin liên lạc: phanhuuphuoc101@gmail.com 
