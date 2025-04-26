@@ -1360,7 +1360,7 @@ class TorrentClientGUI:
         self.root.after(self.update_interval_ms, self.update_ui)
 
     def on_closing(self):
-        """Xử lý sự kiện khi người dùng đóng cửa sổ."""
+        """Xử lý sự kiện khi người dùng đóng cửa sổ"""
         if self.is_downloading:
             if messagebox.askyesno("Xác nhận", "Đang tải xuống. Bạn có chắc muốn thoát và dừng tải không?"):
                 print("[GUI] Closing window during download...")
