@@ -1378,12 +1378,7 @@ class TorrentClientGUI:
 if __name__ == "__main__":
     root = tk.Tk()
 
-    try:
-        style = ttk.Style(root)
-    except tk.TclError:
-        print("ttk themes not available or 'clam' theme not found.")
-
-
+    style = ttk.Style(root)
     app = TorrentClientGUI(root)
 
     root.update_idletasks() 
