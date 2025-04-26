@@ -53,11 +53,9 @@ BitTorrent là một giao thức chia sẻ file ngang hàng (P2P) được thi�
 3.  Chạy lệnh: `python main.py` [cite: 1]
 4.  Giao diện đồ họa của ứng dụng sẽ hiện lên, cho phép bạn chọn file .torrent và thư mục lưu.
 
-## 3. Những tính năng hoàn chỉnh và sẽ thực hiện trong tương lai
+## 3. Hạn chế và tính năng thực hiện trong tương lai
 
-### Tính năng hoàn chỉnh
-
-* Các tính năng đã liệt kê ở mục 1.3
+### Hạn chế **Ngây thơ**: Trừ một số hiện thực hoá chuẩn tuân theo BEP3, phần còn lại của ứng dụng phía trên có cách hiện thực "ngây thơ" và đơn giản nhất có thể
 
 ### Tính năng sẽ thực hiện trong tương lai
 
